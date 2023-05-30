@@ -14,8 +14,8 @@ jobs:
     - name: Checkout
       uses: actions/checkout@v3
     - name: Test
-      run:
+      run: |
         find . -name '*.cpp' -exec ./tools/g+++ {} \;
-	find . -name '*.o'
+        find . -name '*.o'
 
 
